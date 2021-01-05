@@ -2,7 +2,8 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: sans-serif;
 }
 
 p,
@@ -51,6 +52,10 @@ nav a {
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     color: #777;
     text-align: center;
     margin: 80px auto 20px;
@@ -67,10 +72,19 @@ h3 {
 
 .content {
     margin-left: 20px;
+    white-space: wrap;
+}
+
+#displayList {
+    white-space: pre-line;
 }
 
 
 /*index style*/
+
+.blog {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .blog a {
     display: block;
@@ -87,6 +101,9 @@ h3 {
 /*details style*/
 
 .details {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
     position: relative;
 }
 
@@ -107,6 +124,8 @@ h3 {
 /*create style*/
 
 .create-blog form {
+    padding: 10px 30px 10px 10px;
+    border: 2px solid black;
     max-width: 400px;
     margin: 0 auto;
 }
@@ -136,4 +155,8 @@ textarea {
     border: 0;
     font-size: 1.2em;
     cursor: pointer;
+}
+
+label {
+    font-size: larger;
 }
